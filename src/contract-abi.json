@@ -1,0 +1,238 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "contract VaccinationCentre",
+                "name": "_vaccinationCentre",
+                "type": "address"
+            },
+            {
+                "internalType": "contract VaccinationValidator",
+                "name": "_vaccinationValidator",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_personAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "_centreAddress",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "_timestamp",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_vaccineCode",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "_vaccineDose",
+                "type": "uint256"
+            }
+        ],
+        "name": "VaccinationRegistered",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "getCentreAddresses",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getIsRegistered",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getPersonId",
+        "outputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTimeStamps",
+        "outputs": [
+            {
+                "internalType": "string[]",
+                "name": "",
+                "type": "string[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getVaccineCodes",
+        "outputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getVaccineDoses",
+        "outputs": [
+            {
+                "internalType": "uint256[]",
+                "name": "",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getVaccineProofs",
+        "outputs": [
+            {
+                "internalType": "bytes32[]",
+                "name": "",
+                "type": "bytes32[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_personAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "_centreAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "_timestamp",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_vaccineCode",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_vaccineDose",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_fullName",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_birthDate",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_passportNumber",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_nationality",
+                "type": "string"
+            }
+        ],
+        "name": "registerVaccination",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "vaccinationCentre",
+        "outputs": [
+            {
+                "internalType": "contract VaccinationCentre",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "vaccinationValidator",
+        "outputs": [
+            {
+                "internalType": "contract VaccinationValidator",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_area",
+                "type": "address"
+            }
+        ],
+        "name": "validateVaccination",
+        "outputs": [],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
