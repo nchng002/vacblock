@@ -6,7 +6,7 @@ Welcome to VacBlocks!
 
 This project aims to demonstrate how vaccinations can be tracked on the blockchain. 
 
-You may [interact with the smart contract here!](https://nchng002.github.io/vacblocks/) <br>
+You may [interact with the smart contract here!](https://vacblocks.glitch.me/) <br>
 
 >⚠️ READ THIS FIRST
 >
